@@ -5,11 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEEME</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
 </head>
 <body>
-    
 
-    <script src="./main.js"></script>
+    <header class="container">
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item text-xs">New Arrivals</li>
+                    <li class="header__item text-xs">Sales</li>
+                    <li class="header__item text-xs">Catalouge</li>
+                </ul>
+    
+                <div class="header__center">
+                    <div class="header__title text-lg font-semi-bold">FEEME</div>
+                    <div class="header__subtitle text-xs">Best fashion Shopping expriences</div>
+                </div>
+    
+                <ul class="header__list">
+                    <li class="header__icon "><i class="fa fa-search"></i></li>
+                    <li><button class="btn header__btn header__btn--active">Sign Up</button> </li>
+                    <li><button class="btn header__btn ">login</button></li>
+                    <li><div class="header__icon"><i class="fa fa-shopping-bag"></i></div></li>
+                </ul>
+            </nav>
+
+            <nav class="header__nav--responsive">
+                <ul class="nav__response__list">
+                    <li>
+                        <div class="mobile__menu">
+                            <span class="line line__top"></span>
+                            <span class="line line__bottom"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="header__center">
+                            <div class="header__title text-lg font-semi-bold">FEEME</div>
+                            <!-- <div class="header__subtitle text-xs">Best fashion Shopping expriences</div> -->
+                        </div>
+                    </li>
+                    <li><div class="header__icon"><i class="fa fa-shopping-bag"></i></div></li>
+                </ul>
+
+                <ul class="mobile__list">
+                    <li>
+                        <div class="inputgrp">
+                            <input type="text" placeholder="Search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        
+                    </li>
+                    <li class="mobile__item text-xs">New Arrivals</li>
+                    <li class="mobile__item text-xs">Sales</li>
+                    <li class="mobile__item text-xs">Catalouge</li>
+                    <li class="btngrp_item">
+                        <button class="btn header__btn header__btn--active">Sign Up</button>
+                        <button class="btn header__btn ">login</button>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__left">
+                        <p class="text-sm">Best Collection</p>
+                        <p  class="text-3xl font-semi-bold main-text-color">Express Your Mood with Modern Style</p>
+                        <p class="text-sm sub-text-color">Tell everyone aboute your mood and what you think of yourself.
+                            Express yourself with our best collection of year
+                        </p>
+                        <button class="btn primary_btn">Shop Now &nbsp;<i class="fa fa-arrow-right"></i></button>
+                    </div>
+                    <div class="hero__center">
+                        <div class="hero__circle"></div>
+                        <img src="./Assets/hero.png" alt="">
+                    </div>
+                    <div class="hero__right">
+                        <p class="text-xl font-semi-bold main-text-color">Flower Shirt summer vibe</p>
+                        <p class="text-sm sub-text-color">The thing you can put on confidently.And at least you can breath with comfort using this kind 
+                            of lothes.
+                        </p>
+                        <a href="">Add to Cart <i class="fa fa-arrow-right"></i></a>
+
+
+                        <div class="hero__slider">
+                            <div class="swiper" id="swiper">
+                                <div class="swiper-text">More of the list</div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="slider__img" src="./Assets/profile2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slider__img" src="./Assets/access1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slider__img" src="./Assets/sale2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slider__img" src="./Assets/profile3.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                                    <div class="swiper-button-prev">
+                                        <i class="fa fa-arrow-left"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script  src="./js/slider.js"></script>
 </body>
 </html>
